@@ -1,0 +1,196 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+.main-section .description h1 {
+    font-family: 'Abril Fatface', cursive;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: rgb(5, 37, 90);
+    margin: -10px 0;
+}
+
+.main-section .description h4 {
+    font-weight: lighter;
+    color: rgba(202, 57, 52, 0.9);
+    margin-bottom: 20px;
+}
+
+.nav-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 3em;
+}
+
+.nav-section i {
+    display: none;
+}
+
+.nav-section .nav-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav-section .nav-bar a {
+    margin: 0 1em;
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+    font-weight: bold;
+    transition: transform 0.15s;
+    font-size: 14px;
+}
+
+.nav-section .nav-bar a:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.nav-section .nav-bar button {
+    border-style: none;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    background-color: rgb(238, 94, 80);
+    transition: opacity 0.15s;
+}
+
+.nav-section .nav-bar button:hover {
+    opacity: 0.85;
+    cursor: pointer;
+}
+
+.main-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(229, 229, 235);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70.6vh;
+    gap: 9em;
+}
+
+.main-section .description {
+    font-size: 15px;
+    width: 400px;
+}
+
+img {
+    transform: scale(1.8);
+}
+
+.main-section .description p {
+    color: rgb(101, 103, 114);
+    margin: 30px 0;
+}
+
+.main-section .description button {
+    border-style: none;
+    padding: 1em 2em;
+    border-radius: 2px;
+    color: white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: rgb(238, 90, 82);
+    transition: opacity 0.15s;
+    margin-right: 7px;
+    transition: transform 0.15s;
+}
+
+.main-section .description button:hover {
+    opacity: 0.8;
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.main-section .description .hire-me {
+    padding: 0.94em 1.95em;
+    background-color: rgb(229, 229, 235);
+    color: rgb(62, 64, 74);
+    border: 1px solid rgba(0, 0, 0, 0.4);
+}
+
+.second-page .heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Abril Fatface', cursive;
+    padding: 2em 2em;
+    gap: 7rem;
+}
+
+@media (max-width: 320px) {
+    img {
+        display: none;
+    }
+    .nav-section {
+        padding: 0.7em 1em;
+    }
+    .nav-section h2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-section .nav-bar {
+        display: none;
+    }
+    .main-section {
+        margin: 0;
+    }
+    .main-section .description h4 {
+        font-size: 5px;
+        margin-bottom: 7px;
+    }
+    .main-section .description h1 {
+        font-size: 12px;
+    }
+    .main-section .description .name {
+        margin-top: 5px;
+    }
+    .nav-section h2 {
+        font-size: 10px;
+    }
+    .main-section .description p {
+        font-size: 5px;
+        margin: 10px 0;
+    }
+    .main-section .description button {
+        font-size: 4px;
+    }
+    .second-page {
+        font-size: 0.4rem;
+    }
+    .second-page .heading {
+        gap: 3rem;
+    }
+    .nav-section i {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-section {
+        padding: 1em 1.5em;
+    }
+    .main-section {
+        height: 58.5vh;
+    }
+    .main-section .description {
+        width: 30%;
+    }
+    img {
+        transform: scale(2);
+    }
+    .main-section .description h1 {
+        margin: -5px 0;
+    }
+}
